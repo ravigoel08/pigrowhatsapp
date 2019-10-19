@@ -19,7 +19,7 @@ def pigro():
 			ab_text = req['AbstractText']
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
-			mes = heading +'\n'+req['Image']+'\n\n'+ab_text
+			mes = heading +'\n\n'+ab_text + req['Image']
 			resp = MessagingResponse()
 			resp.message(f"{mes}")
 			return str(resp)
