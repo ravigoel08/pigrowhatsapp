@@ -5,23 +5,6 @@ from flask import request, jsonify
 from twilio.rest import Client
 import requests
 app = Flask(__name__)
-#api = Api(app)
-#client = Client(account_sid,auth_token)
-#class pigro(Resource):
-#	def post(self):
-#		msg =  request.form.get('Body')
-#		req = requests.get(f'https://api.duckduckgo.com/?skip_disambig=1&
-#format=json&pretty=1&q={msg}').json()
-#		heading = req['Heading']
-#		ab_text = req['AbstractText']
-#		if ab_text == "":
-#			ab_text = req['RelatedTopics'][0]['Text']
-#		mes = heading +'\n\n'+ab_text
-#		resp = MessagingResponse()
-#		resp.message(f"Answer : {mes}")
-#		print(resp)
-#		return str(resp)
-#api.add_resource(pigro,'/incoming')
 @app.route('/server',methods=['GET'])
 def server():
 	return 'hello'
@@ -36,7 +19,7 @@ def pigro():
 			ab_text = req['AbstractText']
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
-			mes = heading +'\n\n'+ab_text
+			mes = heading +'\n'+req['Image']+'\n\n'+ab_text
 			resp = MessagingResponse()
 			resp.message(f"{mes}")
 			return str(resp)
