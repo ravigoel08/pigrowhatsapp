@@ -23,7 +23,7 @@ def pigro():
 			mes = heading+'\n\n'+ab_text
 			resp = MessagingResponse()
 			#resp.message(f"{mes}")
-			resp.message(`*`+req['Heading']+`*`+'\n\n'+ req['AbstractText'] + image)
+			resp.message(`*`+req['Heading']+`*`+'\n\n'+ req['AbstractText'])
 			return str(resp)
 		except:
 			resp = MessagingResponse()
