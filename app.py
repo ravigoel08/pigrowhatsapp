@@ -20,7 +20,7 @@ def pigro():
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
 			#mes = heading+'\n\n'+ab_text
-			msg = resp.message(`*`+req["Heading"]+`*`+req["AbstractText"])
+			msg = resp.message('*'+req["Heading"]+'*'+req["AbstractText"])
 			return str(resp)
 		except:
 			resp.message('_Result not found!_')
