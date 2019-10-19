@@ -1,29 +1,54 @@
-# Python: Getting Started
+## PIGROWHATSAPP :rocket:
 
-A barebones Django app, which can easily be deployed to Heroku.
+It is a whatsapp bot that work as an quick information provider right within whatsapp from Wikipedia pages with most closest results. 
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+## Important Information:
 
-## Running Locally
+If the bot not been used for 30 minutes then it goes to sleep and if you will send message during that time it will take 5-6 seconds to respond! :octocat:
 
-Make sure you have Python 3.7 [installed locally](http://install.python-guide.org). To push to Heroku, you'll need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), as well as [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
+## Tool and Technologies used:
+1. Python 3.7
+2. Twilio API
+3. Flask
+4. Heroku Web Hosting
 
-```sh
-$ git clone https://github.com/heroku/python-getting-started.git
-$ cd python-getting-started
+## Steps to setup the directory
+> create a folder and cd into it.
+> Use git clone to clone the above files.
+> Run virtualenv env to create a virtual environment and start and pipshell. 
+> Run pip install requirements.txt.
+> Run pipfile to install dependencies.
+> Use ngrok for purpose of testing application on your base machine.
+> Run Python app.py to start the server.
 
-$ python3 -m venv getting-started
-$ pip install -r requirements.txt
 
-$ createdb python_getting_started
 
-$ python manage.py migrate
-$ python manage.py collectstatic
+## Usage 
 
-$ heroku local
-```
+> To use this Bot , just click on this URL [WhatsApp](https://wa.me/14155238886?text=join establish-drawn) and add the bot
+> After that just run this command in bot dm- join establish-drawn and your good to go :+1: !
+> To stop using the bot then just send **Stop** command in Direct message and this will unlink. 
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Demo Messages
+> you send these text 
+> Hi , Hello, help, about, pigro, pigrobot then it will reply information about the Bot.
+
+>you want to search about anything just send the word in the chat and bot will reply in 2-3 seconds if result founds as it 
+> gives the information about the closest and highly searched terms.
+
+
+## Screenshots 
+
+![Image1](Screenshot_2019-10-19-21-11-26-885_com.whatsapp.png)
+![Image2](Screenshot_2019-10-19-21-12-20-248_com.whatsapp.png)
+
+
+
+
+
+
+
 
 ## Deploying to Heroku
 
@@ -31,7 +56,6 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 $ heroku create
 $ git push heroku master
 
-$ heroku run python manage.py migrate
 $ heroku open
 ```
 or
