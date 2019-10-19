@@ -17,12 +17,11 @@ def pigro():
 			req = requests.get(f'https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q={msg}').json()
 			heading = req['Heading']
 			ab_text = req['AbstractText']
-			image = req['Image']
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
-			mes = `*`+heading+`*`+'\n\n'+ab_text
+			#mes = heading+'\n\n'+ab_text
 			resp = MessagingResponse()
-			resp.message(f"{mes}")
+			resp.message(`*`+req["Heading"]+`*`+req["ab_text"])
 			return str(resp)
 		except:
 			resp = MessagingResponse()
