@@ -15,15 +15,15 @@ def pigro():
 	if(msg.lower().strip()!="hi" and msg.lower().strip()!="hello" and msg.lower().strip()!="help" and msg.lower().strip()!="about" and msg.lower().strip()!="pigro" and msg.lower().strip()!="pigrobot"):
 		try:
 			req = requests.get(f'https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q={msg}').json()
-			#heading = req['Heading']
-			#ab_text = req['AbstractText']
+			heading = req['Heading']
+			ab_text = req['AbstractText']
 			image = req['Image']
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
 			mes = heading+'\n\n'+ab_text
 			resp = MessagingResponse()
-			#resp.message(f"{mes}")
-			resp.message(`*`+req['Heading']+`*`+'\n\n'+ req['AbstractText'])
+			resp.message(f"{mes}")
+			#resp.message(`*`+req['Heading']+`*`+'\n\n'+ req['AbstractText'])
 			return str(resp)
 		except:
 			resp = MessagingResponse()
