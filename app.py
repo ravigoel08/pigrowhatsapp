@@ -20,10 +20,9 @@ def pigro():
 			image = req['Image']
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
-			mes = heading+'\n\n'+ab_text
+			mes = `*`+heading+`*`+'\n\n'+ab_text
 			resp = MessagingResponse()
 			resp.message(f"{mes}")
-			#resp.message(`*`+req['Heading']+`*`+'\n\n'+ req['AbstractText'])
 			return str(resp)
 		except:
 			resp = MessagingResponse()
@@ -31,7 +30,7 @@ def pigro():
 			return str(resp)
 	else:
 		resp = MessagingResponse()
-		resp.message('Hey 👋 I am *PigroBot* which help you to get quick information from WikiPedia pages, right within WhatsApp.\nTry me, send me anything you want information about. \n I am Developed by *Ravi Goyal*. Follow him 💚  https://www.instagram.com/sypherrv/ ')
+		resp.message('Hey 👋 I am *PigroBot* which help you to get quick information from WikiPedia pages, right within WhatsApp.\nTry me, send me anything you want information about. \n I am Developed by *Ravi Goyal*. Follow him 💚  https://www.instagram.com/sypherrv/ and https://github.com/ravigoel08/')
 		return str(resp)
 if __name__=='__main__':
 	app.run(threaded=True, port=5000)
