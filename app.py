@@ -22,7 +22,7 @@ app = Flask(__name__)
 #		print(resp)
 #		return str(resp)
 #api.add_resource(pigro,'/incoming')
-@app.route('/server',method=['GET'])
+@app.route('/server',methods=['GET'])
 def server():
 	return 'hello'
 @app.route('/incoming',methods=['POST'])
