@@ -1,0 +1,17 @@
+from flask_restful import Resource
+from twilio.rest import Client
+
+account_sid = 'ACfacf6d8cc2d6d755a584fee23528ea73'
+auth_token = '4fd0b82706634024445228f503c1f393'
+
+class pigro(Resource):
+	def post(self):
+
+	client = Client(account_sid, auth_token)
+	message = client.messages.create(
+        	body = "join me",
+        	from_='+14155238886',
+        	to = '+919643349193'	)
+print(message.sid)
+
+
