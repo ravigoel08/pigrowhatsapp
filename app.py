@@ -20,13 +20,13 @@ def pigro():
 			if ab_text == "":
 				ab_text = req['RelatedTopics'][0]['Text']
 			#mes = heading+'\n\n'+ab_text
-			msg = resp.message('*'+req["Heading"]+'*'+req["ab_text"])
+			msg = resp.message(`*`+req["Heading"]+`*`+req["AbstractText"])
 			return str(resp)
 		except:
 			resp.message('_Result not found!_')
 			return str(resp)
 	else:
-		resp.message('Hey 👋 I am *PigroBot* which help you to get quick information from WikiPedia pages, right within WhatsApp.\nTry me, send me anything you want information about. \n I am Developed by *Ravi Goyal*. Follow him 💚  https://www.instagram.com/sypherrv/ and https://github.com/ravigoel08/')
+		resp.message('Hey 👋 I am *PigroBot* which help you to get quick information from WikiPedia pages, right within WhatsApp.\nTry me, send me anything you want information about. \n I am Developed by *Ravi Goyal*. Follow him 💚  https://www.instagram.com/sypherrv/')
 		return str(resp)
 if __name__=='__main__':
 	app.run(threaded=True, port=5000)
