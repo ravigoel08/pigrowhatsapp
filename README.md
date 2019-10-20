@@ -12,14 +12,6 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 3. Flask
 4. Heroku Web Hosting
 
-## Steps to setup the directory
-> create a folder and cd into it.
-> Use git clone to clone the above files.
-> Run virtualenv env to create a virtual environment and start and pipshell. 
-> Run pip install requirements.txt.
-> Run pipfile to install dependencies.
-> Use ngrok for purpose of testing application on your base machine.
-> Run Python app.py to start the server.
 
 
 
