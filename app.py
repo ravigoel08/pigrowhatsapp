@@ -1,8 +1,6 @@
 from flask import Flask,Response
-from flask_restful import Resource,Api
 from twilio.twiml.messaging_response import MessagingResponse
 from flask import request, jsonify
-from twilio.rest import Client
 import requests
 app = Flask(__name__)
 @app.route('/server',methods=['GET'])
