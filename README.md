@@ -11,6 +11,7 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 2. Twilio API
 3. Flask
 4. Heroku Web Hosting
+5. DuckDuckGo
 
 
 
