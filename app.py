@@ -2,10 +2,13 @@ from flask import Flask,Response
 from twilio.twiml.messaging_response import MessagingResponse
 from flask import request, jsonify
 import requests
+
 app = Flask(__name__)
+
 @app.route('/server',methods=['GET'])
 def server():
 	return 'hello'
+
 @app.route('/incoming',methods=['POST'])
 def pigro():
 	msg = request.form.get('Body')
