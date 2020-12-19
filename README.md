@@ -17,6 +17,8 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 ## Working: 
 ![Image1](assets/incoming-sms.width-800.png)
 
+ref: https://twilio-cms-prod.s3.amazonaws.com/images/incoming-sms.width-800.png
+
 ## Usage 
 
 > To use this Bot , just click on this URL [WhatsApp](https://wa.me/14155238886?text=join establish-drawn) and add the bot
@@ -32,32 +34,7 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 > gives the information about the closest and highly searched terms.
 
 
-## Screenshots 
+## Demo
 
-![Image1](assets/Screenshot_2019-10-19-21-11-26-885_com.whatsapp.png)
-![Image2](assets/Screenshot_2019-10-19-21-12-20-248_com.whatsapp.png)
+![demo](assets/Screenrecorder-2020-12-19-18-23.GIF)
 
-
-
-
-
-
-
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-
-$ heroku open
-```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Python on Heroku, see these Dev Center articles:
-
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
