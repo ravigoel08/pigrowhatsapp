@@ -33,8 +33,8 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 
 ## Screenshots 
 
-![Image1](Screenshot_2019-10-19-21-11-26-885_com.whatsapp.png)
-![Image2](Screenshot_2019-10-19-21-12-20-248_com.whatsapp.png)
+![Image1](assets/Screenshot_2019-10-19-21-11-26-885_com.whatsapp.png)
+![Image2](assets/Screenshot_2019-10-19-21-12-20-248_com.whatsapp.png)
 
 
 
