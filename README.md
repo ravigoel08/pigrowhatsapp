@@ -1,6 +1,6 @@
 ## PIGROWHATSAPP :rocket:
 
-It is a whatsapp bot that work as an quick information provider right within whatsapp from Wikipedia pages with most closest results. 
+A whatsapp bot that work as an quick information provider right within whatsapp from Wikipedia pages with most closest results. 
 
 ## Important Information:
 
