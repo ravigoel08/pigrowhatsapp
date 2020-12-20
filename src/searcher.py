@@ -1,6 +1,6 @@
 import requests
 from typing import str, bool
-
+import constants
 
 def check(msg: str) -> bool:
     msg = msg.lower().strip()
@@ -11,7 +11,7 @@ def check(msg: str) -> bool:
 
 def searcher(msg: str) -> str:
     payload = {"skip_disambig": "1", "format": "json", "pretty": "1", "q": msg}
-    req = requests.get("https://api.duckduckgo.com/", params=payload).json()
+    req = requests.get(constants.URL, params=payload).json()
     ab_text = req["AbstractText"]
     if ab_text == "":
         ab_text = req["RelatedTopics"][0]["Text"]
