@@ -1,6 +1,6 @@
 from src import app
 from twilio.twiml.messaging_response import MessagingResponse
-from flask import request, jsonify
+from flask import request, jsonify, Blueprint
 import constants
 from searcher import Check, Searcher
 
