@@ -1,12 +1,12 @@
 ## PIGROWHATSAPP :rocket:
 
-It is a whatsapp bot that work as an quick information provider right within whatsapp from Wikipedia pages with most closest results. 
+A whatsapp bot that work as an quick information provider right within whatsapp from Wikipedia pages with most closest results. 
 
-## Important Information:
+## Important Information :bookmark: :
 
 If the bot not been used for 30 minutes then it goes to sleep and if you will send message during that time it will take 5-6 seconds to respond! :octocat:
 
-## Tool and Technologies used:
+## Tool and Technologies used :hammer: :
 1. Python 3.7
 2. Twilio API
 3. Flask
@@ -14,7 +14,10 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 5. DuckDuckGo
 
 
+## Working: 
+![Image1](assets/incoming-sms.width-800.png)
 
+ref: https://twilio-cms-prod.s3.amazonaws.com/images/incoming-sms.width-800.png
 
 ## Usage 
 
@@ -31,32 +34,7 @@ If the bot not been used for 30 minutes then it goes to sleep and if you will se
 > gives the information about the closest and highly searched terms.
 
 
-## Screenshots 
+## Demo :sparkles:
 
-![Image1](Screenshot_2019-10-19-21-11-26-885_com.whatsapp.png)
-![Image2](Screenshot_2019-10-19-21-12-20-248_com.whatsapp.png)
+![demo](assets/Screenrecorder-2020-12-19-18-23.GIF)
 
-
-
-
-
-
-
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-
-$ heroku open
-```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Python on Heroku, see these Dev Center articles:
-
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
