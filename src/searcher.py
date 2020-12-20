@@ -1,6 +1,5 @@
 import requests
 
-# perform some checks on message recieved from user end
 def Check(msg: str)-> bool:
     msg = msg.lower().strip()
     return (
@@ -8,7 +7,7 @@ def Check(msg: str)-> bool:
     )
 
 
-# search wikipedia for information and return a formated string
+
 def Searcher(msg: str)-> str:
     payload = {'skip_disambig':'1', 'format': 'json', 'pretty': '1', 'q': msg}
     req = requests.get('https://api.duckduckgo.com/', params=payload).json()
