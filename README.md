@@ -36,5 +36,5 @@ ref: https://twilio-cms-prod.s3.amazonaws.com/images/incoming-sms.width-800.png
 
 ## Demo :sparkles:
 
-![demo](assets/Screenrecorder-2020-12-19-18-23.GIF)
+![demo](assets/pigrodemo.gif)
 
